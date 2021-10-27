@@ -94,7 +94,7 @@ class Bike(models.Model):
     # 外部キー(子側にForeignkeyを設定する)
     maker = models.ForeignKey(Maker, on_delete=models.CASCADE)
     # カテゴリ(ex sports, naked)
-    category = models.TextField(blank=False, null=False)
+    category = models.CharField(blank=False, null=False, max_length=150)
     # 排気量(ex 1000, 250)
     displacement = models.IntegerField(blank=False, null=False)
     # 作成日
