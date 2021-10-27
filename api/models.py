@@ -86,7 +86,7 @@ class Maker(models.Model):
     maker_name = models.CharField(blank=False, null=False, max_length=150)
 
     def __str__(self):
-        return self.title
+        return self.maker_name
 
 
 class Bike(models.Model):
@@ -103,4 +103,4 @@ class Bike(models.Model):
     updated_datetime = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.title
+        return self.bike_name
