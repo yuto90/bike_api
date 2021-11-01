@@ -6,3 +6,5 @@ config/local_settings.py
 __pycache__/
 db-volumes/
 db.sqlite3
+mysql
+config/__pycache__
